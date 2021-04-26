@@ -1,0 +1,494 @@
+/* Example 26-13: styles.css */
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url('bootstrap/css/bootstrap.css'); 
+
+@import http://fonts.googleapis.com/css?family=Roboto;
+html{
+
+font-family: 'Roboto Condensed', sans-serif;
+  font-size  :14px;
+ background-size: contain; /**/
+
+background-image:url(socialMedia.png);
+width: 100%;
+}
+
+
+* {
+
+	
+}
+
+
+h3{
+color: #ED10A0;
+}
+legend{
+font-size: 8px;
+}
+
+/****body e containerul in care se incarca jocul*****/
+body {
+
+	min-height: 300px;
+  width     :620px;
+  margin    :20px auto;
+  background:#f8f8f8;
+  border    :2px solid #FF0099;
+  border-radius: 12px;
+  opacity: 0.92;
+  padding: 20px 0px 40px 0px;   /*top right bottom left    */
+}
+
+
+.clic2{
+
+background-image: url(img/favour.png) no-repeat;
+
+height: 100%;
+width: 100%;
+}
+
+img {
+  border            :3px solid #F7109F;
+  margin-right      :15px;
+  -moz-box-shadow   :4px 4px 4px #666666;
+  -webkit-box-shadow:4px 4px 4px #666666;
+  box-shadow        : 4px 4px 4px #666666;
+  border-radius: 5px;
+}
+
+li a, .button {
+  text-decoration:none;
+  color: #FF0099;
+}
+
+ li a:hover, .button:hover {
+ /* color: #FF00CC; */
+  font-weight:600;
+  /* border-bottom: 4px ridge #00FF66; */
+}
+ 
+ #meniu22:li a:active {
+    background-color: yellow;
+}
+
+/*  asta e functie faina care schimba cand  e focus pe elemant*/
+input:focus {
+  background-color: #12FF71;
+  color: #FF00CC;
+}
+
+ul li {
+    list-style-type: none;
+    color: #FE0C9E;
+    border: ridge #FE0C9E;
+    border-radius: 10px;
+    list-style: circle;
+    margin: 2px;
+    padding: 2px;
+    width: 90%;
+}
+ 
+ /*asta e banneru*/
+.appname {
+  text-align :center;
+  background :#FF0099; /*****culori****/
+  color      :#00FF66;
+  text-shadow:2px 2px #000000;
+  font-size  :30px;
+  padding    :5px;
+
+}
+
+.fieldname {
+  float:left;
+  width:120px;
+ 
+}
+
+.main {
+  margin-left:40px;
+  margin-right: 40px;
+}
+
+.info {
+  background : #02FB70;
+  color      : #FE13A0;
+	border     : 2px solid #FE13A0;
+	border-radius: 3px;
+	padding    : 7px 15px;
+  margin-left:40px;
+  margin-right: 40px;
+}
+
+.menu li, .button {
+  display           :inline;
+  padding           :4px 6px;
+  border            :1px solid #FF0099;
+  background        :#ddd;
+	
+  margin-right      :8px;
+	border-radius     :5px;
+	-moz-box-shadow   :4px 4px 4px #666666;
+	-webkit-box-shadow:4px 4px 4px #666666;
+	box-shadow        :4px 4px 4px #666666;
+	
+}
+
+.subhead {
+  font-weight:bold;
+  padding: 5px;
+}
+
+.taken, .error {
+  color:red;
+}
+
+.available {
+  color:green;
+}
+
+.whisper {
+  font-style:italic;
+  color     :#006600;
+}
+
+#logo {
+  
+  font-weight:bold;
+  font-style:italic;
+  font-size :97px;
+}
+
+/**** de aici scriu eu****/
+p2{
+margin: 15px;
+margin-left: 45px;
+padding: 5px;
+padding-left: 15px;
+text-align: center;
+color:#FF0000;
+border: 2px solid black;
+border-radius: 5px;
+}
+
+p3{
+
+padding: 15px;
+text-shadow: #333366;
+text-align: center;
+color: #FF0099;
+
+padding-left: 2px;
+padding-right: 2px;
+
+}
+
+p4{
+position: relative;
+left: 187px;
+margin: 15px;
+margin-bottom: 45px;
+margin-left: 45px;
+padding: 5px;
+padding-right-left: 15px;
+text-align: center;
+color:#FF0000;
+border: 2px solid black;
+border-radius: 5px;
+background-color: #90EE90;
+}
+
+textarea{
+text-decoration: blink;
+background-color:#FFFF99;
+color:#0033FF;
+border:#F7109F double 4px;
+border-radius: 5px;
+font-size: 16px;
+font-style:oblique;
+font-weight: bolder;
+}
+
+.mesaje{
+margin: 5px;
+margin-left: 15px;
+background-color:#FFFF66;
+border: 3px solid black;
+padding: 5px;
+padding-left: 20px;
+border-radius: 10px;
+color: #000099;
+}
+.data1{
+color:#6600FF;
+font-size: 12px;
+
+}
+
+.data2{
+color: #660099;
+font-size: 9px;
+text-decoration: blink;
+}
+
+.data3 {
+color:#6600FF;
+font:"Comic Sans MS";
+font-size: 13px;
+}
+
+.data4 {
+position: relative;
+left: 50px;
+margin: 15px;
+margin-bottom: 45px;
+margin-left: 45px;
+padding: 5px;
+padding-right-left: 15px;
+text-align: center;
+color:#FF0000;
+border: 2px solid black;
+border-radius: 5px;
+background-color: #90EE90;
+font-size: 22px;
+font-weight:bold;
+color: #3300FF;
+}
+
+
+.data5{
+position: fixed;
+right: 10px;
+top: 20px;
+margin: 15px;
+
+padding: 5px;
+padding-right-left: 15px;
+text-align: center;
+color:#FF0000;
+border: 2px solid #00FF66;
+border-radius: 5px;
+background-color: #FFFF99;
+font-size: 16px;
+font-weight:bold;
+color: #ff0099;
+-webkit-box-shadow:4px 4px 4px #666666;
+}
+
+
+
+.data3 {
+color:#6600FF;
+font:"Comic Sans MS";
+font-size: 14px;
+}
+.coltDreapta{
+ position:fixed;
+ top:0px;
+ left:10px;
+ border-bottom: solid 2px #003333;
+ border-right: solid 1px;
+ padding: 6px;
+ background: #00ff66;
+ font-size:12px;
+ font-weight:bold;
+ color: #ff0099;
+ border-radius: 0px 0px 6px 6px;
+ text-align: center;
+
+ /* aici pun o culoare care imi place dar las umbra gri #ff0099*/
+  -webkit-box-shadow:4px 4px 4px #666666;
+
+}
+/****selecteza text cu click dreapta*****/
+*::selection {
+  background: #083045;
+  color: #FFFFFF;
+}
+*::-moz-selection {
+  background: #083045;
+  color: #FFFFFF;
+}
+*::-webkit-selection {
+  background: #083045;
+  color: #ffffff;
+}
+
+/*****tooltip*****/
+
+ /* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*******lista preteni*****/
+ .listaPreteni{
+
+
+
+ /*
+ padding: 5px; 
+ margin-bottom: 5px;
+ border-bottom: solid #FE0C9E 1px; 
+ */
+
+
+}
+
+small{
+color:#009900;
+}
+
+a:link    { }
+a:visited { }
+a:hover   { }
+a:active  { } 
+
+
+.myButton{
+    background:url(img/online.ico) no-repeat; 
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+
+  }
+
+  .myButton:active {
+    background:url(img/favour.png) no-repeat;
+    background-color:red;
+  }
+  
+  
+.dreapta{
+position: relative;
+float: right;
+}
+
+
+.conectare { /* butonul de conectare*/
+background-color:#FF13A0;
+color:#FFFF13;
+margin: 10px;
+margin-left: 0px;
+padding: 8px;
+border: #000000 solid 2px ;
+
+ border-radius: 7px;
+ cursor: crosshair; /* asta face cursorul hover */
+ cursor: pointer;
+   -webkit-box-shadow:4px 4px 4px #666666;
+ 
+ }
+ 
+.conectare:hover {
+ background-color:#FF13A0;
+
+text-decoration: underline;
+margin: 10px;
+color: #01FB71;
+ font-size: bold;
+margin-left: 0px;
+padding: 8px;
+border: #000000 solid 3px ;
+
+ border-radius: 7px;
+ cursor: crosshair; /* asta face cursorul hover */
+ cursor: pointer;
+   -webkit-box-shadow:4px 4px 4px #666666;
+ }
+ 
+ #menu2 , menu2 li{
+ background-color:#FF13A0;
+color: #FEFD35;
+margin: 10px;
+margin-left: 5px;
+padding: 8px;
+border: #000000 solid 2px ;
+
+ border-radius: 7px;
+ 
+ cursor: pointer;
+   -webkit-box-shadow:4px 4px 4px #666666;
+
+ }
+ 
+ .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+   /* font-weight: 400; */
+    line-height: 1;
+    color: #FFFD25;
+	
+     /* white-space: nowrap; */
+}
+.dropdown-menu .divider {
+    height: 3px  !important;
+    margin: 1px 0;
+    overflow: hidden;
+    background-color: #FFFD25;
+}
+
+
+
+.dropdown-menu li a:hover, 
+.dropdown-menu li  a:focus {
+    /*color: #083045; */
+    text-decoration: none;
+    background-color: #FFFD25;
+
+	  border-radius: 5px;
+}
+
+a:focus, a:hover {
+    color: #FF13A0;
+    text-decoration: underline;
+}
