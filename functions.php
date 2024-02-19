@@ -3,7 +3,7 @@
   $dbhost  = 'localhost';    // Unlikely to require changing
   $dbname  = 'flaro';   // Modify these...
   $dbuser  = 'flavi';   // ...variables according
-  $dbpass  = 'zzxxzz';   // ...to your installation
+  $dbpass  = 'pass';   // ...to your installation
   $appname = "FlaRo"; // ...and preference
 
   $connection = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
