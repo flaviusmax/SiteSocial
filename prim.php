@@ -7,7 +7,7 @@ Dar atenţie: conexiunea nu este persistentă - HTTP tratează fiecare cerere in
 
 $my_database = "prima"; // numele bazei de date cu care lucram
 
-$dbi = new mysqli('localhost', 'admin', 'zzxxzz', $my_database); // nume, admin, parola, baza de date
+$dbi = new mysqli('localhost', 'admin', 'pass', $my_database); // nume, admin, parola, baza de date
 if($dbi->connect_errno) die("Conectare nereusita: " . $dbi->connect_error); 
 
 // echo $dbi->character_set_name();
